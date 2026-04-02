@@ -1,0 +1,264 @@
+/* ============================================================
+   PORTFOLIO – GLOBAL STYLESHEET
+   Author : Mohamed Allam
+   File   : style.css
+   ============================================================ */
+
+
+/* ─── 1. CSS CUSTOM PROPERTIES ─────────────────────────────── */
+:root {
+    --glass-bg-dark    : rgba(25, 25, 25, 0.6);
+    --glass-border-dark: rgba(255, 255, 255, 0.08);
+    --glass-bg-light   : rgba(255, 255, 255, 0.7);
+    --glass-border-light: rgba(0, 0, 0, 0.1);
+    --accent           : #ffc107;
+    --accent-glow      : rgba(255, 193, 7, 0.4);
+    --accent-soft      : rgba(255, 193, 7, 0.08);
+    --dark-bg          : #0a0a0a;
+}
+
+
+/* ─── 2. BASE / RESET */
+body {
+    font-family     : 'Inter', sans-serif;
+    background-color: var(--dark-bg);
+    transition      : background-color 0.4s ease, color 0.4s ease;
+    position        : relative;
+}
+
+/* RTL font override */
+html[dir="rtl"] body {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Ambient glow behind content */
+body::before {
+    content       : '';
+    position      : fixed;
+    top           : -50%;
+    left          : -50%;
+    width         : 200%;
+    height        : 200%;
+    background    : radial-gradient(circle at center, rgba(234, 179, 8, 0.05) 0%, transparent 40%);
+    z-index       : -1;
+    pointer-events: none;
+}
+
+
+/* ─── 3. LIGHT THEME OVERRIDES ──────────────────────────────── */
+html[data-bs-theme="light"] body {
+    background          : linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    background-attachment: fixed;
+}
+
+html[data-bs-theme="light"] body::before {
+    background: radial-gradient(circle at center, rgba(234, 179, 8, 0.12) 0%, transparent 50%);
+}
+
+
+/* ─── 4. TYPOGRAPHY ─────────────────────────────────────────── */
+h1, h2, h3, h4, .anton-font {
+    font-family   : 'Anton', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight   : normal;
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] .anton-font {
+    font-family   : 'Cairo', sans-serif;
+    font-weight   : 700;
+    letter-spacing: 0;
+}
+
+
+/* ─── 5. GLASSMORPHISM UTILITY ──────────────────────────────── */
+.glass {
+    background          : var(--glass-bg-dark);
+    backdrop-filter     : blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border              : 1px solid var(--glass-border-dark);
+    box-shadow          : 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+html[data-bs-theme="light"] .glass {
+    background          : rgba(255, 255, 255, 0.45);
+    backdrop-filter     : blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border              : 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow          : 0 8px 32px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ─── 6. HOVER UTILITIES ────────────────────────────────────── */
+.hover-lift {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform   : translateY(-8px);
+    border-color: var(--bs-warning);
+    box-shadow  : 0 10px 40px rgba(234, 179, 8, 0.15);
+}
+
+.btn-hover {
+    transition: all 0.3s ease;
+}
+
+.btn-hover:hover {
+    transform : scale(1.05);
+    box-shadow: 0 0 20px var(--accent-glow);
+}
+
+
+/* ─── 7. NAVBAR ─────────────────────────────────────────────── */
+.navbar.glass {
+    position     : sticky;
+    top          : 0;
+    z-index      : 1000;
+    border-left  : none;
+    border-right : none;
+    border-top   : none;
+    border-radius: 0;
+}
+
+nav img {
+    width        : 50px;
+    height       : 50px;
+    border-radius: 10%;
+}
+
+
+/* ─── 8. FLOATING ICON (bottom-right) ───────────────────────── */
+.icon {
+    position     : fixed;
+    bottom       : 10px;
+    right        : 10px;
+    width        : 50px;
+    height       : 50px;
+    border-radius: 10%;
+    z-index      : 100;
+    transition   : all 0.3s ease;
+    animation    : icon-animation 3s ease-in-out infinite;
+}
+
+@keyframes icon-animation {
+    10%  { transform: translateY(-100%) rotate(360deg); }
+    100% { transform: translateY(0%) rotate(360deg) scale(1.2); }
+}
+
+
+/* ─── 9. SOCIAL ICON BUTTONS ────────────────────────────────── */
+.social-icons {
+    display    : flex;
+    gap        : 1rem;
+    align-items: center;
+    flex-wrap  : wrap;
+}
+
+.social-icon-btn {
+    display        : inline-flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 48px;
+    height         : 48px;
+    border-radius  : 50%;
+    font-size      : 1.3rem;
+    border         : 2px solid rgba(255, 193, 7, 0.5);
+    color          : var(--accent);
+    background     : var(--accent-soft);
+    text-decoration: none;
+    transition     : all 0.3s cubic-bezier(0.4, 2, 0.55, 0.44);
+    position       : relative;
+    overflow       : hidden;
+}
+
+/* Ripple fill on hover */
+.social-icon-btn::before {
+    content      : '';
+    position     : absolute;
+    inset        : 0;
+    background   : var(--accent);
+    border-radius: 50%;
+    transform    : scale(0);
+    transition   : transform 0.3s cubic-bezier(0.4, 2, 0.55, 0.44);
+    z-index      : 0;
+}
+
+.social-icon-btn:hover::before {
+    transform: scale(1);
+}
+
+.social-icon-btn i {
+    position  : relative;
+    z-index   : 1;
+    transition: color 0.3s;
+}
+
+.social-icon-btn:hover i {
+    color: var(--dark-bg);
+}
+
+.social-icon-btn:hover {
+    border-color: var(--accent);
+    box-shadow  : 0 0 20px var(--accent-glow);
+    transform   : translateY(-3px) scale(1.08);
+}
+
+
+/* ─── 10. CV VIEWER SECTION ─────────────────────────────────── */
+#cv-viewer-section {
+    display  : none;
+    animation: fadeSlideDown 0.5s ease forwards;
+}
+
+#cv-viewer-section.visible {
+    display: block;
+}
+
+@keyframes fadeSlideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.cv-iframe-wrapper {
+    border-radius: 16px;
+    overflow     : hidden;
+    border       : 2px solid rgba(255, 193, 7, 0.3);
+    box-shadow   : 0 0 40px rgba(255, 193, 7, 0.15);
+}
+
+
+/* ─── 11. TIMELINE (Career Section) ─────────────────────────── */
+.timeline-item {
+    position: relative;
+}
+
+.timeline-badge {
+    width           : 14px;
+    height          : 14px;
+    background-color: var(--bs-warning);
+    border-radius   : 50%;
+    position        : absolute;
+    left            : -8px;
+    top             : 4px;
+    box-shadow      : 0 0 10px var(--bs-warning);
+}
+
+/* RTL timeline adjustments */
+html[dir="rtl"] .timeline-item {
+    border-left  : 2px solid var(--bs-warning) !important;
+    border-right : 2px solid var(--bs-warning) !important;
+    padding-left : 0 !important;
+    padding-right: 1.5rem !important;
+}
+
+html[dir="rtl"] .timeline-badge {
+    left : auto;
+    right: -8px;
+}

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="dark" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohamed Allam – Frontend Developer & Software Engineer based in Cairo, Egypt. Available for freelance and full-time opportunities.">
+    <title>Mohamed Allam - Portfolio</title>
+
+    <!-- Vendor CSS -->
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Site stylesheet -->
+    <link href="./style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./WhatsApp Sticker 2026-03-27 at 5.08.34 PM.34 PM" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Floating corner icon -->
+    <img class="icon" src="./WhatsApp Sticker 2026-03-27 at 5.08.34 PM.34 PM" alt="icon">
+
+    <!-- ════════════════════════════════════════
+         NAVBAR
+    ════════════════════════════════════════ -->
+    <nav class="navbar navbar-expand-lg glass py-3">
+        <div class="container">
+
+            <!-- Brand logo + name -->
+            <img src="./WhatsApp Sticker 2026-03-27 at 5.08.34 PM.34 PM" alt="logo">
+            <a class="navbar-brand anton-font fs-4 text-warning" href="#" data-i18n="brand">MOHAMED ALLAM</a>
+
+            <!-- Right-side controls (theme + lang + hamburger) -->
+            <div class="d-flex align-items-center gap-2 gap-lg-3 order-lg-last">
+                <button id="theme-icon"
+                        onclick="toggleTheme()"
+                        class="btn btn-sm btn-outline-warning rounded-circle"
+                        style="width:36px; height:36px;"
+                        title="Toggle Theme">
+                    ☀️
+                </button>
+                <button id="lang-btn"
+                        onclick="toggleLanguage()"
+                        class="btn btn-sm btn-warning fw-bold px-3 btn-hover">
+                    عربي
+                </button>
+                <button class="navbar-toggler border-0 p-1 shadow-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Collapsible nav links -->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-3 mt-lg-0 fw-medium">
+                    <li class="nav-item"><a class="nav-link px-3 hover-lift" href="#services" data-i18n="nav_services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 hover-lift" href="#tech"     data-i18n="nav_tech">Tech Stack</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 hover-lift" href="#career"   data-i18n="nav_career">Career</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 hover-lift" href="#contact"  data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- ════════════════════════════════════════
+         PAGE WRAPPER
+    ════════════════════════════════════════ -->
+    <div class="container">
+
+        <!-- ── HERO ─────────────────────────────── -->
+        <header class="py-5 my-5 row flex-column-reverse flex-md-row align-items-center">
+
+            <!-- Left: text + CTA -->
+            <div class="col-md-7 d-flex flex-column gap-3 text-center text-md-start">
+                <span class="text-warning fw-bold text-uppercase" style="letter-spacing:2px;" data-i18n="hero_subtitle">
+                    MOHAMED ALLAM
+                </span>
+                <h1 class="display-1 text-uppercase lh-1 mb-0 fw-bold" data-i18n="hero_title">
+                    Software<br>Engineering
+                </h1>
+                <p class="text-body-secondary lead mt-3 mx-auto mx-md-0" style="max-width:500px;" data-i18n="hero_desc">
+                    I'm a Frontend Developer based in Cairo, Egypt. Passionate about web development and building software that improves the lives of those around me.
+                </p>
+
+                <!-- CTA button + social icons -->
+                <div class="mt-4 d-flex flex-column flex-sm-row align-items-center align-items-md-start gap-3">
+                    <a href="#portfolio"
+                       class="btn btn-warning px-5 py-3 fw-bold text-dark text-uppercase rounded-pill btn-hover"
+                       style="letter-spacing:1px;"
+                       data-i18n="btn_portfolio">
+                        Latest Portfolio
+                    </a>
+
+                    <div class="social-icons">
+                        <!-- GitHub -->
+                        <a id="github-icon"
+                           href="https://github.com/mo7amed-allam?tab=repositories"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="social-icon-btn"
+                           title="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a id="linkedin-icon"
+                           href="https://www.linkedin.com/in/mohamed-allam1"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="social-icon-btn"
+                           title="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <!-- CV – downloads the file AND opens the inline viewer -->
+                        <a id="cv-download-btn"
+                           href="./MOHAMED_ALLAM-CV.pdf"
+                           download="MOHAMED_ALLAM-CV.pdf"
+                           class="social-icon-btn"
+                           title="Download & View CV"
+                           onclick="toggleCvViewer(event)">
+                            <i class="fas fa-file-lines"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: portrait photo -->
+            <div class="col-md-5 mb-5 mb-md-0 position-relative text-center text-md-end">
+                <!-- Decorative glow blob -->
+                <div class="position-absolute top-50 start-50 translate-middle bg-warning rounded-circle opacity-25"
+                     style="width:300px; height:300px; filter:blur(60px); z-index:0;">
+                </div>
+                <img src="./WhatsApp Image 2026-03-27 at 5.53.50 PM.jpeg"
+                     alt="Mohamed Allam Portrait"
+                     class="img-fluid rounded-4 position-relative z-1 shadow-lg border border-warning border-opacity-25"
+                     style="object-fit:cover; max-height:450px;">
+            </div>
+
+        </header>
+
+        <!-- ── CV VIEWER (hidden until CV icon is clicked) ─── -->
+        <section id="cv-viewer-section" class="py-3">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="fs-4 fw-bold text-warning mb-0">
+                    <i class="fas fa-file-pdf me-2"></i>My CV
+                </h2>
+                <button onclick="closeCvViewer()"
+                        class="btn btn-sm btn-outline-warning rounded-pill px-3"
+                        title="Close CV viewer">
+                    <i class="fas fa-times me-1"></i>Close
+                </button>
+            </div>
+            <div class="cv-iframe-wrapper">
+                <iframe id="cv-iframe"
+                        src="./MOHAMED_ALLAM-CV.pdf"
+                        width="100%"
+                        height="700px"
+                        style="border:none; display:block;"
+                        title="Mohamed Allam CV">
+                    <p class="p-4 text-body">
+                        Your browser cannot display the PDF inline.
+                        <a href="./MOHAMED_ALLAM-CV.pdf" download class="text-warning">Click here to download.</a>
+                    </p>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- ── SERVICES ──────────────────────────── -->
+        <section id="services" class="py-5">
+            <div class="mb-5 text-center text-md-start">
+                <h2 class="display-4 text-uppercase mb-3" data-i18n="services_title">My Services</h2>
+                <p class="text-body-secondary mx-auto mx-md-0" style="max-width:600px;" data-i18n="services_subtitle">
+                    Empowering businesses through web development and tailored solutions that bring value to your workflows &amp; operations.
+                </p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Service 1 -->
+                <div class="col">
+                    <div class="card glass text-body h-100 rounded-4 p-4 hover-lift border-0">
+                        <div class="card-body p-0">
+                            <div class="fs-1 text-warning mb-4">💻</div>
+                            <h3 class="fs-4 fw-bold mb-3" style="text-transform:none;" data-i18n="serv_1_title">Web Development</h3>
+                            <p class="card-text text-body-secondary mb-0" data-i18n="serv_1_desc">
+                                Building modern, scalable &amp; secure web applications tailored to your specific business needs with cutting-edge technologies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col">
+                    <div class="card glass text-body h-100 rounded-4 p-4 hover-lift border-0">
+                        <div class="card-body p-0">
+                            <div class="fs-1 text-warning mb-4">✨</div>
+                            <h3 class="fs-4 fw-bold mb-3" style="text-transform:none;" data-i18n="serv_2_title">UI / UX Design</h3>
+                            <p class="card-text text-body-secondary mb-0" data-i18n="serv_2_desc">
+                                Crafting intuitive, engaging, and accessible user experiences that delight your customers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col">
+                    <div class="card glass text-body h-100 rounded-4 p-4 hover-lift border-0">
+                        <div class="card-body p-0">
+                            <div class="fs-1 text-warning mb-4">🗄️</div>
+                            <h3 class="fs-4 fw-bold mb-3" style="text-transform:none;" data-i18n="serv_3_title">Administrative &amp; Technical Support Specialist</h3>
+                            <p class="card-text text-body-secondary mb-0" data-i18n="serv_3_desc">
+                                Administrative &amp; Technical Support Specialist and Virtual Assistant specializing in creating CVs, Portfolios, PowerPoint, Excel, and Word documents.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── TECH STACK ─────────────────────────── -->
+        <section id="tech" class="py-5">
+            <div class="mb-5 text-center text-md-start">
+                <h2 class="display-4 text-uppercase lh-1" data-i18n="tech_title">Tech Stack /<br>Architecture</h2>
+            </div>
+
+            <div class="glass text-body p-4 p-md-5 rounded-4 hover-lift d-flex flex-column gap-3">
+                <h3 class="display-5 fw-bold text-warning mb-2" style="text-transform:none;" data-i18n="tech_card_title">Modern JS Ecosystem</h3>
+                <p class="fw-medium lead mb-2" style="max-width:80%;" data-i18n="tech_card_desc">
+                    Building high-performance, dynamic, and SEO-friendly applications using modern open-source web frameworks.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">React.js</span>
+                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">Next.js</span>
+                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">TypeScript</span>
+                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">TailwindCSS</span>
+                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">Bootstrap 5</span>
+                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">MongoDB</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CAREER ─────────────────────────────── -->
+        <section id="career" class="py-5">
+            <div class="mb-5 text-center text-md-start">
+                <h2 class="display-4 text-uppercase lh-1" data-i18n="career_title">Career /<br>Chronicles</h2>
+            </div>
+
+            <div class="d-flex flex-column gap-5">
+                <!-- Timeline item 1 -->
+                <div class="timeline-item border-start border-warning border-2 ps-4 py-2 hover-lift rounded-end p-3 glass">
+                    <div class="timeline-badge"></div>
+                    <span class="text-warning fw-bold text-uppercase" style="letter-spacing:1px; font-size:0.85rem;" data-i18n="car_1_date">2025 — PRESENT</span>
+                    <h3 class="fs-3 text-uppercase mt-2 mb-2 fw-bold text-body" data-i18n="car_1_title">Full Stack Developer</h3>
+                    <p class="text-body-secondary mb-0" data-i18n="car_1_desc">Leading end-to-end development of web applications, managing databases, backend logic, and frontend user interfaces.</p>
+                </div>
+                <!-- Timeline item 2 -->
+                <div class="timeline-item border-start border-warning border-2 ps-4 py-2 hover-lift rounded-end p-3 glass">
+                    <div class="timeline-badge"></div>
+                    <span class="text-warning fw-bold text-uppercase" style="letter-spacing:1px; font-size:0.85rem;" data-i18n="car_2_date">(Nov) 2025 — Present</span>
+                    <h3 class="fs-3 text-uppercase mt-2 mb-2 fw-bold text-body" data-i18n="car_2_title">Frontend Developer</h3>
+                    <p class="text-body-secondary mb-0" data-i18n="car_2_desc">Specialized in building responsive SPAs using React.js and integrating with complex RESTful APIs.</p>
+                </div>
+                <!-- Timeline item 3 -->
+                <div class="timeline-item border-start border-warning border-2 ps-4 py-2 hover-lift rounded-end p-3 glass">
+                    <div class="timeline-badge"></div>
+                    <span class="text-warning fw-bold text-uppercase" style="letter-spacing:1px; font-size:0.85rem;" data-i18n="car_3_date">2025 — Present</span>
+                    <h3 class="fs-3 text-uppercase mt-2 mb-2 fw-bold text-body" data-i18n="car_3_title">UI/UX Designer</h3>
+                    <p class="text-body-secondary mb-0" data-i18n="car_3_desc">Prototyped user interfaces and conducted user research to guide the product development lifecycle.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CONTACT ────────────────────────────── -->
+        <section id="contact" class="py-5 mb-5">
+            <div class="mb-5 text-center text-md-start">
+                <h2 class="display-4 text-uppercase lh-1 mb-3" data-i18n="contact_title">Let's Build<br>This Play Real.</h2>
+                <p class="text-body-secondary mx-auto mx-md-0" style="max-width:600px;" data-i18n="contact_desc">
+                    Got a project in mind? Let's discuss how we can work together to bring your ideas to life.
+                </p>
+            </div>
+
+            <div class="row gx-5 gy-5">
+                <!-- Contact info -->
+                <div class="col-md-6 order-md-1">
+                    <div class="d-flex flex-column gap-4 text-body glass p-4 rounded-4 hover-lift h-100 justify-content-center">
+                        <div class="d-flex align-items-center gap-3 fs-5">
+                            <span class="text-warning fs-3">✉</span>
+                            <a href="mailto:mohamedallam012345@gmail.com" class="text-decoration-none text-body fw-medium">
+                                mohamedallam012345@gmail.com
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 fs-5">
+                            <span class="text-warning fs-3">📞</span>
+                            <a href="tel:+201060456349" class="text-decoration-none text-body fw-medium">+20 10 604 563 49</a>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 fs-5">
+                            <span class="text-warning fs-3">📍</span>
+                            <span class="text-body fw-medium" data-i18n="contact_location">Mansoura, Egypt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact form -->
+                <div class="col-md-6 order-md-2">
+                    <form class="d-flex flex-column gap-3 glass p-4 rounded-4 hover-lift">
+                        <div>
+                            <input type="text"
+                                   class="form-control bg-transparent text-body border-secondary p-3"
+                                   placeholder="Your Name"
+                                   required
+                                   data-i18n="form_name"
+                                   data-i18n-prop="placeholder">
+                        </div>
+                        <div>
+                            <input type="email"
+                                   class="form-control bg-transparent text-body border-secondary p-3"
+                                   placeholder="Your Email"
+                                   required
+                                   data-i18n="form_email"
+                                   data-i18n-prop="placeholder">
+                        </div>
+                        <div>
+                            <textarea class="form-control bg-transparent text-body border-secondary p-3"
+                                      placeholder="Tell me about your project..."
+                                      rows="4"
+                                      required
+                                      data-i18n="form_msg"
+                                      data-i18n-prop="placeholder"></textarea>
+                        </div>
+                        <button type="button"
+                                class="btn btn-warning fw-bold text-uppercase py-3 rounded-pill mt-2 btn-hover text-dark"
+                                data-i18n="form_btn">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── FOOTER ─────────────────────────────── -->
+        <footer class="py-5 d-flex flex-column align-items-center gap-4 text-center mt-4 glass rounded-top-4">
+            <div class="anton-font fs-3 text-warning" data-i18n="brand">MOHAMED ALLAM</div>
+
+            <!-- Footer nav links -->
+            <div class="d-flex flex-wrap gap-4 justify-content-center">
+                <a href="#services" class="text-decoration-none fw-medium text-body hover-lift" data-i18n="nav_services">Services</a>
+                <a href="#tech"     class="text-decoration-none fw-medium text-body hover-lift" data-i18n="nav_tech">Tech Stack</a>
+                <a href="#career"   class="text-decoration-none fw-medium text-body hover-lift" data-i18n="nav_career">Career</a>
+                <a href="#contact"  class="text-decoration-none fw-medium text-body hover-lift" data-i18n="nav_contact">Contact</a>
+            </div>
+
+            <!-- Footer social icons -->
+            <div class="social-icons justify-content-center">
+                <a href="https://github.com/mo7amed-allam?tab=repositories"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="social-icon-btn"
+                   title="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mohamed-allam1"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="social-icon-btn"
+                   title="LinkedIn Profile">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="./MOHAMED_ALLAM-CV.pdf"
+                   download="MOHAMED_ALLAM-CV.pdf"
+                   class="social-icon-btn"
+                   title="Download & View CV"
+                   onclick="toggleCvViewer(event)">
+                    <i class="fas fa-file-lines"></i>
+                </a>
+            </div>
+
+            <p class="text-body-secondary small mb-0" data-i18n="footer_copy">&copy; 2026 Mohamed Allam. All rights reserved.</p>
+        </footer>
+
+    </div><!-- /container -->
+
+    <!-- Scripts (vendor first, then site script) -->
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
