@@ -7,20 +7,20 @@
     <title>Mohamed Allam - Portfolio</title>
 
     <!-- Vendor CSS -->
-    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
     <!-- Site stylesheet -->
-    <link href="./style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./WhatsApp Sticker 2026-03-27 at 5.08.34 PM.34 PM" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 <body>
 
     <!-- Floating corner icon -->
-    <img class="icon" src="./WhatsApp Sticker 2026-03-27 at 5.08.34 PM.34 PM" alt="icon">
+    <img class="icon" src="./images/favicon.png" alt="icon">
 
     <!-- ════════════════════════════════════════
          NAVBAR
@@ -29,7 +29,7 @@
         <div class="container">
 
             <!-- Brand logo + name -->
-            <img src="./WhatsApp Sticker 2026-03-27 at 5.08.34 PM.34 PM" alt="logo">
+            <img src="./images/favicon.png" alt="logo">
             <a class="navbar-brand anton-font fs-4 text-warning" href="#" data-i18n="brand">MOHAMED ALLAM</a>
 
             <!-- Right-side controls (theme + lang + hamburger) -->
@@ -86,15 +86,9 @@
                 <h1 class="display-2 text-uppercase lh-1 mb-0 fw-bold" data-i18n="hero_title">
                     Software<br>Engineering
                 </h1>
-<<<<<<< HEAD
                 <div class="text-body-secondary lead mt-4 mx-auto mx-md-0" style="max-width:750px; font-size: 1rem; text-align: left;" data-i18n="hero_desc">
                     My story didn’t begin with just writing scattered lines of code; it started with a deep curiosity to understand how screens pulse with life and how complex problems are solved. As a Software Engineer specializing in Full-Stack Development, I transform this curiosity into reality by crafting interactive interfaces with React.js and building robust systems with Node.js. To me, every project is a narrative where code simplifies the human experience. Beyond development, I leverage my technical precision to help others succeed, engineering ATS-optimized CVs and professional portfolios that tell a compelling career story. By integrating expert solutions in Word, Excel, and PowerPoint, I turn complex data into clear, high-impact assets. I don’t just build software; I engineer pathways to growth, turning technical complexity into your greatest professional advantage. Let's build your next success story together.
                 </div>
-=======
-                <p class="text-body-secondary lead mt-3 mx-auto mx-md-0" style="max-width:500px;" data-i18n="hero_desc">
-                    I'm a Frontend Developer based in Mansoura, Egypt. Passionate about web development and building software that improves the lives of those around me.
-                </p>
->>>>>>> d3e5947d8b822252b267b2c7859113503b425909
 
                 <!-- CTA button + social icons -->
                 <div class="mt-4 d-flex flex-column flex-sm-row align-items-center align-items-md-start gap-3">
@@ -126,7 +120,7 @@
                         </a>
                         <!-- CV – downloads the file AND opens the inline viewer -->
                         <a id="cv-download-btn"
-                           href="./MOHAMED_ALLAM-CV.pdf"
+                           href="./docs/MOHAMED_ALLAM-CV.pdf"
                            download="MOHAMED_ALLAM-CV.pdf"
                            class="social-icon-btn"
                            title="Download & View CV"
@@ -144,7 +138,7 @@
                      style="width:350px; height:450px; filter:blur(60px); z-index:0;">
                 </div>
                 <figure class="figure m-0 position-relative z-1" style="transform: translateY(-30px);">
-                    <img src="./WhatsApp Image 2026-03-27 at 5.53.50 PM.jpeg"
+                    <img src="./images/profile-photo.jpeg"
                          alt="Mohamed Allam Portrait"
                          class="figure-img img-fluid rounded-4 shadow-lg border border-warning border-opacity-25"
                          style="object-fit:cover; min-height:400px; width:90%;">
@@ -168,14 +162,14 @@
             </div>
             <div class="cv-iframe-wrapper">
                 <iframe id="cv-iframe"
-                        src="./MOHAMED_ALLAM-CV.pdf"
+                        src="./docs/MOHAMED_ALLAM-CV.pdf"
                         width="100%"
                         height="700px"
                         style="border:none; display:block;"
                         title="Mohamed Allam CV">
                     <p class="p-4 text-body">
                         Your browser cannot display the PDF inline.
-                        <a href="./MOHAMED_ALLAM-CV.pdf" download class="text-warning">Click here to download.</a>
+                        <a href="./docs/MOHAMED_ALLAM-CV.pdf" download class="text-warning">Click here to download.</a>
                     </p>
                 </iframe>
             </div>
@@ -296,7 +290,7 @@
                 <!-- Project 1 -->
                 <div class="col">
                     <div class="card glass text-body h-100 rounded-4 p-3 hover-lift border-0 d-flex flex-column">
-                        <img src="./register-page.png" class="card-img-top rounded-3 mb-3 border border-warning border-opacity-25" alt="Login Register Page" style="object-fit: cover; height: 220px;">
+                        <img src="./images/register-page.png" class="card-img-top rounded-3 mb-3 border border-warning border-opacity-25" alt="Login Register Page" style="object-fit: cover; height: 220px;">
                         <div class="card-body p-0 d-flex flex-column flex-grow-1">
                             <h3 class="fs-4 fw-bold mb-4" style="text-transform:none;" data-i18n="proj_1_title">Login-Register-Page project</h3>
                             <a href="https://login-page-eight-fawn.vercel.app?_vercel_share=ADsBNfwWCvh6HsgI8uaezAYtJbP6AsO7" target="_blank" class="btn btn-outline-warning mt-auto rounded-pill fw-bold" data-i18n="proj_link">View Project</a>
@@ -306,7 +300,7 @@
                 <!-- Project 2 -->
                 <div class="col">
                     <div class="card glass text-body h-100 rounded-4 p-3 hover-lift border-0 d-flex flex-column">
-                        <img src="./marketplace.png" class="card-img-top rounded-3 mb-3 border border-warning border-opacity-25" alt="Full-Stack Marketplace" style="object-fit: cover; height: 220px;">
+                        <img src="./images/marketplace.png" class="card-img-top rounded-3 mb-3 border border-warning border-opacity-25" alt="Full-Stack Marketplace" style="object-fit: cover; height: 220px;">
                         <div class="card-body p-0 d-flex flex-column flex-grow-1">
                             <h3 class="fs-4 fw-bold mb-4" style="text-transform:none;" data-i18n="proj_2_title">Full-Stack Marketplace project</h3>
                             <a href="https://marketplace-lime-three.vercel.app/products" target="_blank" class="btn btn-outline-warning mt-auto rounded-pill fw-bold" data-i18n="proj_link">View Project</a>
@@ -316,7 +310,7 @@
                 <!-- Project 3 -->
                 <div class="col">
                     <div class="card glass text-body h-100 rounded-4 p-3 hover-lift border-0 d-flex flex-column">
-                        <img src="./portfolio.png" class="card-img-top rounded-3 mb-3 border border-warning border-opacity-25" alt="Portfolio" style="object-fit: cover; height: 220px;">
+                        <img src="./images/portfolio.png" class="card-img-top rounded-3 mb-3 border border-warning border-opacity-25" alt="Portfolio" style="object-fit: cover; height: 220px;">
                         <div class="card-body p-0 d-flex flex-column flex-grow-1">
                             <h3 class="fs-4 fw-bold mb-4" style="text-transform:none;" data-i18n="proj_3_title">My Portfolio project (containing my CV)</h3>
                             <a href="https://mo7amed-allam.github.io/MohamedAllam_portfolio/" target="_blank" class="btn btn-outline-warning mt-auto rounded-pill fw-bold" data-i18n="proj_link">View Project</a>
@@ -430,7 +424,7 @@
                    title="LinkedIn Profile">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="./MOHAMED_ALLAM-CV.pdf"
+                <a href="./docs/MOHAMED_ALLAM-CV.pdf"
                    download="MOHAMED_ALLAM-CV.pdf"
                    class="social-icon-btn"
                    title="Download & View CV"
@@ -446,8 +440,8 @@
 
     <!-- Scripts (vendor first, then site script) -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="./bootstrap.bundle.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 </html>

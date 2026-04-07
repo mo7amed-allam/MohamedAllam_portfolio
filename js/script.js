@@ -38,11 +38,7 @@ const translations = {
         nav_contact      : 'Contact',
         hero_subtitle    : 'MOHAMED ALLAM',
         hero_title       : 'Software<br>Engineering',
-<<<<<<< HEAD
         hero_desc        : "My story didn’t begin with just writing scattered lines of code; it started with a deep curiosity to understand how screens pulse with life and how complex problems are solved. As a Software Engineer specializing in Full-Stack Development, I transform this curiosity into reality by crafting interactive interfaces with React.js and building robust systems with Node.js. To me, every project is a narrative where code simplifies the human experience. Beyond development, I leverage my technical precision to help others succeed, engineering ATS-optimized CVs and professional portfolios that tell a compelling career story. By integrating expert solutions in Word, Excel, and PowerPoint, I turn complex data into clear, high-impact assets. I don’t just build software; I engineer pathways to growth, turning technical complexity into your greatest professional advantage. Let's build your next success story together.",
-=======
-        hero_desc        : "I'm a Frontend Developer based in Mansoura, Egypt. Passionate about web development and building software that improves the lives of those around me.",
->>>>>>> d3e5947d8b822252b267b2c7859113503b425909
         btn_portfolio    : 'Latest Portfolio',
         services_title   : 'My Services',
         services_subtitle: 'Empowering businesses through web development and tailored solutions that bring value to your workflows & operations.',
@@ -90,11 +86,7 @@ const translations = {
         nav_contact      : 'تواصل معي',
         hero_subtitle    : 'محمد علام',
         hero_title       : 'مهندس<br>برمجيات',
-<<<<<<< HEAD
         hero_desc        : "قصتي لم تبدأ مجرد كتابة سطور متناثرة من التعليمات البرمجية؛ بل بدأت بفضول عميق لفهم كيف تنبض الشاشات بالحياة وكيف تُحل المشكلات المعقدة. بصفتي مهندس برمجيات متخصصاً في التطوير الشامل، أقوم بتحويل هذا الفضول إلى واقع من خلال بناء واجهات تفاعلية باستخدام React.js وأنظمة قوية باستخدام Node.js. بالنسبة لي، كل مشروع هو قصة تساهم فيها البرمجة في تبسيط التجربة الإنسانية. وخارج مجال التطوير، أستفيد من دقتّي التقنية لمساعدة الآخرين على النجاح، من خلال صياغة سير ذاتية (CVs) متوافقة مع أنظمة تتبع المتقدمين (ATS) وتصميم معارض أعمال احترافية تروي قصة مهنية مقنعة. من خلال دمج حلول متخصصة في Word و Excel و PowerPoint، أقوم بتحويل البيانات المعقدة إلى أصول واضحة وعالية التأثير. أنا لا أكتفي ببناء البرمجيات؛ بل أصمم مسارات للنمو، محولاً التعقيد التقني إلى أكبر ميزة مهنية لك. دعنا نبني قصة نجاحك التالية معاً.",
-=======
-        hero_desc        : 'أنا مطور واجهات أمامية مقيم في المنصورة، مصر. شغوف بتطوير الويب وبناء البرمجيات التي تحسن حياة من حولي.',
->>>>>>> d3e5947d8b822252b267b2c7859113503b425909
         btn_portfolio    : 'أحدث أعمالي',
         services_title   : 'خدماتي',
         services_subtitle: 'تمكين الشركات من خلال تطوير الويب والحلول المخصصة التي تضيف قيمة إلى سير عملك وعملياتك.',
