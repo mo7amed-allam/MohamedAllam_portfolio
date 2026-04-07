@@ -262,3 +262,20 @@ html[dir="rtl"] .timeline-badge {
     left : auto;
     right: -8px;
 }
+
+/* ─── 12. RTL ALIGNMENT FIXES ────────────────────────────── */
+html[dir="rtl"] .text-md-start {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .text-start {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .text-md-end {
+    text-align: left !important;
+}
+
+html[dir="rtl"] .text-end {
+    text-align: left !important;
+}

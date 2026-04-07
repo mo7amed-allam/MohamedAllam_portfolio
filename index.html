@@ -59,9 +59,10 @@
             <!-- Collapsible nav links -->
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-3 mt-lg-0 fw-medium">
-                    <li class="nav-item"><a class="nav-link px-3 hover-lift" href="#services" data-i18n="nav_services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link px-3 hover-lift" href="#tech"     data-i18n="nav_tech">Tech Stack</a></li>
                     <li class="nav-item"><a class="nav-link px-3 hover-lift" href="#career"   data-i18n="nav_career">Career</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 hover-lift" href="#tech"     data-i18n="nav_tech">Tech Stack</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 hover-lift" href="#services" data-i18n="nav_services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-3 hover-lift" href="#projects" data-i18n="nav_projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link px-3 hover-lift" href="#contact"  data-i18n="nav_contact">Contact</a></li>
                 </ul>
             </div>
@@ -79,19 +80,19 @@
 
             <!-- Left: text + CTA -->
             <div class="col-md-7 d-flex flex-column gap-3 text-center text-md-start">
-                <span class="text-warning fw-bold text-uppercase" style="letter-spacing:2px;" data-i18n="hero_subtitle">
+                <span class="text-warning fw-bold text-uppercase fs-3" style="letter-spacing:1px;" data-i18n="hero_subtitle">
                     MOHAMED ALLAM
                 </span>
-                <h1 class="display-1 text-uppercase lh-1 mb-0 fw-bold" data-i18n="hero_title">
+                <h1 class="display-2 text-uppercase lh-1 mb-0 fw-bold" data-i18n="hero_title">
                     Software<br>Engineering
                 </h1>
-                <p class="text-body-secondary lead mt-3 mx-auto mx-md-0" style="max-width:500px;" data-i18n="hero_desc">
-                    I'm a Frontend Developer based in Cairo, Egypt. Passionate about web development and building software that improves the lives of those around me.
-                </p>
+                <div class="text-body-secondary lead mt-4 mx-auto mx-md-0" style="max-width:750px; font-size: 1rem; text-align: left;" data-i18n="hero_desc">
+                    My story didn’t begin with just writing scattered lines of code; it started with a deep curiosity to understand how screens pulse with life and how complex problems are solved. As a Software Engineer specializing in Full-Stack Development, I transform this curiosity into reality by crafting interactive interfaces with React.js and building robust systems with Node.js. To me, every project is a narrative where code simplifies the human experience. Beyond development, I leverage my technical precision to help others succeed, engineering ATS-optimized CVs and professional portfolios that tell a compelling career story. By integrating expert solutions in Word, Excel, and PowerPoint, I turn complex data into clear, high-impact assets. I don’t just build software; I engineer pathways to growth, turning technical complexity into your greatest professional advantage. Let's build your next success story together.
+                </div>
 
                 <!-- CTA button + social icons -->
                 <div class="mt-4 d-flex flex-column flex-sm-row align-items-center align-items-md-start gap-3">
-                    <a href="#portfolio"
+                    <a href="https://login-page-eight-fawn.vercel.app?_vercel_share=ADsBNfwWCvh6HsgI8uaezAYtJbP6AsO7" target="_blank"
                        class="btn btn-warning px-5 py-3 fw-bold text-dark text-uppercase rounded-pill btn-hover"
                        style="letter-spacing:1px;"
                        data-i18n="btn_portfolio">
@@ -134,12 +135,15 @@
             <div class="col-md-5 mb-5 mb-md-0 position-relative text-center text-md-end">
                 <!-- Decorative glow blob -->
                 <div class="position-absolute top-50 start-50 translate-middle bg-warning rounded-circle opacity-25"
-                     style="width:300px; height:300px; filter:blur(60px); z-index:0;">
+                     style="width:350px; height:450px; filter:blur(60px); z-index:0;">
                 </div>
-                <img src="./WhatsApp Image 2026-03-27 at 5.53.50 PM.jpeg"
-                     alt="Mohamed Allam Portrait"
-                     class="img-fluid rounded-4 position-relative z-1 shadow-lg border border-warning border-opacity-25"
-                     style="object-fit:cover; max-height:450px;">
+                <figure class="figure m-0 position-relative z-1" style="transform: translateY(-30px);">
+                    <img src="./WhatsApp Image 2026-03-27 at 5.53.50 PM.jpeg"
+                         alt="Mohamed Allam Portrait"
+                         class="figure-img img-fluid rounded-4 shadow-lg border border-warning border-opacity-25"
+                         style="object-fit:cover; min-height:400px; width:90%;">
+                    <figcaption class="figure-caption text-center mt-3 text-warning fw-bold fs-5">Software Engineer</figcaption>
+                </figure>
             </div>
 
         </header>
@@ -168,6 +172,59 @@
                         <a href="./MOHAMED_ALLAM-CV.pdf" download class="text-warning">Click here to download.</a>
                     </p>
                 </iframe>
+            </div>
+        </section>
+
+        <!-- ── CAREER ─────────────────────────────── -->
+        <section id="career" class="py-5">
+            <div class="mb-5 text-center text-md-start">
+                <h2 class="display-4 text-uppercase lh-1" data-i18n="career_title">Career /<br>Chronicles</h2>
+            </div>
+
+            <div class="d-flex flex-column gap-5">
+                <!-- Timeline item 1 -->
+                <div class="timeline-item border-start border-warning border-2 ps-4 py-2 hover-lift rounded-end p-3 glass">
+                    <div class="timeline-badge"></div>
+                    <span class="text-warning fw-bold text-uppercase" style="letter-spacing:1px; font-size:0.85rem;" data-i18n="car_1_date">November 2025 - Present</span>
+                    <h3 class="fs-3 text-uppercase mt-2 mb-2 fw-bold text-body" data-i18n="car_1_title">Full-stack development (React.js, Node.js)</h3>
+                    <p class="text-body-secondary mb-0" data-i18n="car_1_desc">Offered by DEPI in partnership with Harvest</p>
+                </div>
+                <!-- Timeline item 2 -->
+                <div class="timeline-item border-start border-warning border-2 ps-4 py-2 hover-lift rounded-end p-3 glass">
+                    <div class="timeline-badge"></div>
+                    <span class="text-warning fw-bold text-uppercase" style="letter-spacing:1px; font-size:0.85rem;" data-i18n="car_2_date">Jul 2025 - September 2025</span>
+                    <h3 class="fs-3 text-uppercase mt-2 mb-2 fw-bold text-body" data-i18n="car_2_title">Machine Learning</h3>
+                    <p class="text-body-secondary mb-0" data-i18n="car_2_desc">Offered by NTI</p>
+                </div>
+                <!-- Timeline item 3 -->
+                <div class="timeline-item border-start border-warning border-2 ps-4 py-2 hover-lift rounded-end p-3 glass">
+                    <div class="timeline-badge"></div>
+                    <span class="text-warning fw-bold text-uppercase" style="letter-spacing:1px; font-size:0.85rem;" data-i18n="car_3_date">Jul 2022 - October 2022</span>
+                    <h3 class="fs-3 text-uppercase mt-2 mb-2 fw-bold text-body" data-i18n="car_3_title">Digital Marketing</h3>
+                    <p class="text-body-secondary mb-0" data-i18n="car_3_desc">Offered by Mansoura University Engineering.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── TECH STACK ─────────────────────────── -->
+        <section id="tech" class="py-5">
+            <div class="mb-5 text-center text-md-start">
+                <h2 class="display-4 text-uppercase lh-1" data-i18n="tech_title">Tech Stack /<br>Architecture</h2>
+            </div>
+
+            <div class="glass text-body p-4 p-md-5 rounded-4 hover-lift d-flex flex-column gap-3">
+                <h3 class="display-5 fw-bold text-warning mb-2" style="text-transform:none;" data-i18n="tech_card_title">Modern JS Ecosystem</h3>
+                <p class="fw-medium lead mb-2" style="max-width:80%;" data-i18n="tech_card_desc">
+                    Building high-performance, dynamic, and SEO-friendly applications using modern open-source web frameworks.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">React.js</span>
+                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">Next.js</span>
+                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">TypeScript</span>
+                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">TailwindCSS</span>
+                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">Bootstrap 5</span>
+                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">MongoDB</span>
+                </div>
             </div>
         </section>
 
@@ -210,9 +267,9 @@
                     <div class="card glass text-body h-100 rounded-4 p-4 hover-lift border-0">
                         <div class="card-body p-0">
                             <div class="fs-1 text-warning mb-4">🗄️</div>
-                            <h3 class="fs-4 fw-bold mb-3" style="text-transform:none;" data-i18n="serv_3_title">Administrative &amp; Technical Support Specialist</h3>
+                            <h3 class="fs-4 fw-bold mb-3" style="text-transform:none;" data-i18n="serv_3_title">Other Services</h3>
                             <p class="card-text text-body-secondary mb-0" data-i18n="serv_3_desc">
-                                Administrative &amp; Technical Support Specialist and Virtual Assistant specializing in creating CVs, Portfolios, PowerPoint, Excel, and Word documents.
+                                Providing assistance with CV and portfolio creation, along with formatting and solutions in Microsoft Word, Excel, and PowerPoint.
                             </p>
                         </div>
                     </div>
@@ -220,55 +277,45 @@
             </div>
         </section>
 
-        <!-- ── TECH STACK ─────────────────────────── -->
-        <section id="tech" class="py-5">
+        <!-- ── PROJECTS ────────────────────────────── -->
+        <section id="projects" class="py-5">
             <div class="mb-5 text-center text-md-start">
-                <h2 class="display-4 text-uppercase lh-1" data-i18n="tech_title">Tech Stack /<br>Architecture</h2>
-            </div>
-
-            <div class="glass text-body p-4 p-md-5 rounded-4 hover-lift d-flex flex-column gap-3">
-                <h3 class="display-5 fw-bold text-warning mb-2" style="text-transform:none;" data-i18n="tech_card_title">Modern JS Ecosystem</h3>
-                <p class="fw-medium lead mb-2" style="max-width:80%;" data-i18n="tech_card_desc">
-                    Building high-performance, dynamic, and SEO-friendly applications using modern open-source web frameworks.
+                <h2 class="display-4 text-uppercase lh-1" data-i18n="projects_title">Projects</h2>
+                <p class="text-body-secondary mx-auto mx-md-0" data-i18n="projects_desc">
+                    A showcase of my recent works.
                 </p>
-                <div class="d-flex flex-wrap gap-2 mt-3">
-                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">React.js</span>
-                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">Next.js</span>
-                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">TypeScript</span>
-                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">TailwindCSS</span>
-                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">Bootstrap 5</span>
-                    <span class="badge bg-warning text-dark px-3 py-2 fs-6 rounded-pill hover-lift">MongoDB</span>
-                </div>
             </div>
-        </section>
-
-        <!-- ── CAREER ─────────────────────────────── -->
-        <section id="career" class="py-5">
-            <div class="mb-5 text-center text-md-start">
-                <h2 class="display-4 text-uppercase lh-1" data-i18n="career_title">Career /<br>Chronicles</h2>
-            </div>
-
-            <div class="d-flex flex-column gap-5">
-                <!-- Timeline item 1 -->
-                <div class="timeline-item border-start border-warning border-2 ps-4 py-2 hover-lift rounded-end p-3 glass">
-                    <div class="timeline-badge"></div>
-                    <span class="text-warning fw-bold text-uppercase" style="letter-spacing:1px; font-size:0.85rem;" data-i18n="car_1_date">2025 — PRESENT</span>
-                    <h3 class="fs-3 text-uppercase mt-2 mb-2 fw-bold text-body" data-i18n="car_1_title">Full Stack Developer</h3>
-                    <p class="text-body-secondary mb-0" data-i18n="car_1_desc">Leading end-to-end development of web applications, managing databases, backend logic, and frontend user interfaces.</p>
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Project 1 -->
+                <div class="col">
+                    <div class="card glass text-body h-100 rounded-4 p-3 hover-lift border-0 d-flex flex-column">
+                        <img src="./register-page.png" class="card-img-top rounded-3 mb-3 border border-warning border-opacity-25" alt="Login Register Page" style="object-fit: cover; height: 220px;">
+                        <div class="card-body p-0 d-flex flex-column flex-grow-1">
+                            <h3 class="fs-4 fw-bold mb-4" style="text-transform:none;" data-i18n="proj_1_title">Login-Register-Page project</h3>
+                            <a href="https://login-page-eight-fawn.vercel.app?_vercel_share=ADsBNfwWCvh6HsgI8uaezAYtJbP6AsO7" target="_blank" class="btn btn-outline-warning mt-auto rounded-pill fw-bold" data-i18n="proj_link">View Project</a>
+                        </div>
+                    </div>
                 </div>
-                <!-- Timeline item 2 -->
-                <div class="timeline-item border-start border-warning border-2 ps-4 py-2 hover-lift rounded-end p-3 glass">
-                    <div class="timeline-badge"></div>
-                    <span class="text-warning fw-bold text-uppercase" style="letter-spacing:1px; font-size:0.85rem;" data-i18n="car_2_date">(Nov) 2025 — Present</span>
-                    <h3 class="fs-3 text-uppercase mt-2 mb-2 fw-bold text-body" data-i18n="car_2_title">Frontend Developer</h3>
-                    <p class="text-body-secondary mb-0" data-i18n="car_2_desc">Specialized in building responsive SPAs using React.js and integrating with complex RESTful APIs.</p>
+                <!-- Project 2 -->
+                <div class="col">
+                    <div class="card glass text-body h-100 rounded-4 p-3 hover-lift border-0 d-flex flex-column">
+                        <img src="./marketplace.png" class="card-img-top rounded-3 mb-3 border border-warning border-opacity-25" alt="Full-Stack Marketplace" style="object-fit: cover; height: 220px;">
+                        <div class="card-body p-0 d-flex flex-column flex-grow-1">
+                            <h3 class="fs-4 fw-bold mb-4" style="text-transform:none;" data-i18n="proj_2_title">Full-Stack Marketplace project</h3>
+                            <a href="https://marketplace-lime-three.vercel.app/products" target="_blank" class="btn btn-outline-warning mt-auto rounded-pill fw-bold" data-i18n="proj_link">View Project</a>
+                        </div>
+                    </div>
                 </div>
-                <!-- Timeline item 3 -->
-                <div class="timeline-item border-start border-warning border-2 ps-4 py-2 hover-lift rounded-end p-3 glass">
-                    <div class="timeline-badge"></div>
-                    <span class="text-warning fw-bold text-uppercase" style="letter-spacing:1px; font-size:0.85rem;" data-i18n="car_3_date">2025 — Present</span>
-                    <h3 class="fs-3 text-uppercase mt-2 mb-2 fw-bold text-body" data-i18n="car_3_title">UI/UX Designer</h3>
-                    <p class="text-body-secondary mb-0" data-i18n="car_3_desc">Prototyped user interfaces and conducted user research to guide the product development lifecycle.</p>
+                <!-- Project 3 -->
+                <div class="col">
+                    <div class="card glass text-body h-100 rounded-4 p-3 hover-lift border-0 d-flex flex-column">
+                        <img src="./portfolio.png" class="card-img-top rounded-3 mb-3 border border-warning border-opacity-25" alt="Portfolio" style="object-fit: cover; height: 220px;">
+                        <div class="card-body p-0 d-flex flex-column flex-grow-1">
+                            <h3 class="fs-4 fw-bold mb-4" style="text-transform:none;" data-i18n="proj_3_title">My Portfolio project (containing my CV)</h3>
+                            <a href="https://mo7amed-allam.github.io/MohamedAllam_portfolio/" target="_blank" class="btn btn-outline-warning mt-auto rounded-pill fw-bold" data-i18n="proj_link">View Project</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -305,9 +352,9 @@
 
                 <!-- Contact form -->
                 <div class="col-md-6 order-md-2">
-                    <form class="d-flex flex-column gap-3 glass p-4 rounded-4 hover-lift">
+                    <form id="contact-form" class="d-flex flex-column gap-3 glass p-4 rounded-4 hover-lift">
                         <div>
-                            <input type="text"
+                            <input type="text" id="sender-name"
                                    class="form-control bg-transparent text-body border-secondary p-3"
                                    placeholder="Your Name"
                                    required
@@ -315,7 +362,7 @@
                                    data-i18n-prop="placeholder">
                         </div>
                         <div>
-                            <input type="email"
+                            <input type="email" id="sender-email"
                                    class="form-control bg-transparent text-body border-secondary p-3"
                                    placeholder="Your Email"
                                    required
@@ -323,14 +370,22 @@
                                    data-i18n-prop="placeholder">
                         </div>
                         <div>
-                            <textarea class="form-control bg-transparent text-body border-secondary p-3"
+                            <input type="tel" id="sender-phone"
+                                   class="form-control bg-transparent text-body border-secondary p-3"
+                                   placeholder="Your Phone Number"
+                                   required
+                                   data-i18n="form_phone"
+                                   data-i18n-prop="placeholder">
+                        </div>
+                        <div>
+                            <textarea id="sender-message" class="form-control bg-transparent text-body border-secondary p-3"
                                       placeholder="Tell me about your project..."
                                       rows="4"
                                       required
                                       data-i18n="form_msg"
                                       data-i18n-prop="placeholder"></textarea>
                         </div>
-                        <button type="button"
+                        <button type="submit"
                                 class="btn btn-warning fw-bold text-uppercase py-3 rounded-pill mt-2 btn-hover text-dark"
                                 data-i18n="form_btn">
                             Send Message
@@ -346,9 +401,10 @@
 
             <!-- Footer nav links -->
             <div class="d-flex flex-wrap gap-4 justify-content-center">
-                <a href="#services" class="text-decoration-none fw-medium text-body hover-lift" data-i18n="nav_services">Services</a>
-                <a href="#tech"     class="text-decoration-none fw-medium text-body hover-lift" data-i18n="nav_tech">Tech Stack</a>
                 <a href="#career"   class="text-decoration-none fw-medium text-body hover-lift" data-i18n="nav_career">Career</a>
+                <a href="#tech"     class="text-decoration-none fw-medium text-body hover-lift" data-i18n="nav_tech">Tech Stack</a>
+                <a href="#services" class="text-decoration-none fw-medium text-body hover-lift" data-i18n="nav_services">Services</a>
+                <a href="#projects" class="text-decoration-none fw-medium text-body hover-lift" data-i18n="nav_projects">Projects</a>
                 <a href="#contact"  class="text-decoration-none fw-medium text-body hover-lift" data-i18n="nav_contact">Contact</a>
             </div>
 
@@ -383,6 +439,7 @@
     </div><!-- /container -->
 
     <!-- Scripts (vendor first, then site script) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="./bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
 
