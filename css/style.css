@@ -1,11 +1,4 @@
-/* ============================================================
-   PORTFOLIO – GLOBAL STYLESHEET
-   Author : Mohamed Allam
-   File   : style.css
-   ============================================================ */
-
-
-/* ─── 1. CSS CUSTOM PROPERTIES ─────────────────────────────── */
+/* 1. CSS CUSTOM PROPERTIES  */
 :root {
     --glass-bg-dark    : rgba(25, 25, 25, 0.6);
     --glass-border-dark: rgba(255, 255, 255, 0.08);
@@ -24,6 +17,7 @@ body {
     background-color: var(--dark-bg);
     transition      : background-color 0.4s ease, color 0.4s ease;
     position        : relative;
+    overflow-x      : hidden;
 }
 
 /* RTL font override */
@@ -56,7 +50,7 @@ html[data-bs-theme="light"] body::before {
 }
 
 
-/* ─── 4. TYPOGRAPHY ─────────────────────────────────────────── */
+/* 4. TYPOGRAPHY */
 h1, h2, h3, h4, .anton-font {
     font-family   : 'Anton', sans-serif;
     text-transform: uppercase;
@@ -75,7 +69,7 @@ html[dir="rtl"] .anton-font {
 }
 
 
-/* ─── 5. GLASSMORPHISM UTILITY ──────────────────────────────── */
+/* 5. GLASSMORPHISM UTILITY  */
 .glass {
     background          : var(--glass-bg-dark);
     backdrop-filter     : blur(16px);
@@ -93,7 +87,7 @@ html[data-bs-theme="light"] .glass {
 }
 
 
-/* ─── 6. HOVER UTILITIES ────────────────────────────────────── */
+/* 6. HOVER UTILITIES */
 .hover-lift {
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
                 box-shadow 0.3s ease,
@@ -145,6 +139,7 @@ nav img {
     z-index      : 100;
     transition   : all 0.3s ease;
     animation    : icon-animation 3s ease-in-out infinite;
+    pointer-events: none;
 }
 
 @keyframes icon-animation {
@@ -263,17 +258,18 @@ html[dir="rtl"] .timeline-badge {
     right: -8px;
 }
 
-/* ─── 12. RTL ALIGNMENT FIXES ────────────────────────────── */
-html[dir="rtl"] .text-md-start {
-    text-align: right !important;
+/* ─── 12. RTL ALIGNMENT UTILITIES ────────────────────────────── */
+@media (min-width: 768px) {
+    html[dir="rtl"] .text-md-start {
+        text-align: right !important;
+    }
+    html[dir="rtl"] .text-md-end {
+        text-align: left !important;
+    }
 }
 
 html[dir="rtl"] .text-start {
     text-align: right !important;
-}
-
-html[dir="rtl"] .text-md-end {
-    text-align: left !important;
 }
 
 html[dir="rtl"] .text-end {
