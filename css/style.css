@@ -121,10 +121,33 @@ html[data-bs-theme="light"] .glass {
     border-radius: 0;
 }
 
+.navbar > .container {
+    flex-wrap: nowrap;
+}
+
 nav img {
     width        : 50px;
     height       : 50px;
     border-radius: 10%;
+    flex-shrink  : 0;
+}
+
+.navbar-brand {
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    white-space  : nowrap;
+    flex-shrink  : 1;
+    min-width    : 0;
+}
+
+@media (max-width: 991.98px) {
+    nav img {
+        width : 35px;
+        height: 35px;
+    }
+    .navbar-brand {
+        font-size: 1rem !important;
+    }
 }
 
 
@@ -140,6 +163,15 @@ nav img {
     transition   : all 0.3s ease;
     animation    : icon-animation 3s ease-in-out infinite;
     pointer-events: none;
+}
+
+@media (max-width: 767.98px) {
+    .icon {
+        width : 32px;
+        height: 32px;
+        bottom: 5px;
+        right : 5px;
+    }
 }
 
 @keyframes icon-animation {
@@ -274,4 +306,46 @@ html[dir="rtl"] .text-start {
 
 html[dir="rtl"] .text-end {
     text-align: left !important;
+}
+
+
+/* ─── 13. CONTACT INFO – MOBILE FIXES ────────────────────────── */
+
+/* Keep email/phone/ltr text readable in RTL */
+.contact-ltr-text {
+    direction      : ltr;
+    unicode-bidi   : plaintext;
+    overflow-wrap  : break-word;
+    word-break     : break-all;
+}
+
+/* Ensure contact info rows stay inside the card */
+#contact .glass .d-flex.align-items-center {
+    overflow-wrap: anywhere;
+    word-break   : break-word;
+}
+
+@media (max-width: 767.98px) {
+    #contact .glass .d-flex.align-items-center {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* ─── 14. FORM RTL FIXES ─────────────────────────────────────── */
+html[dir="rtl"] .form-control {
+    text-align: right;
+}
+
+html[dir="rtl"] .form-control::placeholder {
+    text-align: right;
+}
+
+html[dir="rtl"] input[type="tel"] {
+    direction: ltr;
+    text-align: right;
+}
+
+html[dir="rtl"] input[type="tel"]::placeholder {
+    direction: rtl;
+    text-align: right;
 }
