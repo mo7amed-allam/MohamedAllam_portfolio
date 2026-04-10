@@ -119,6 +119,9 @@ html[data-bs-theme="light"] .glass {
     border-right : none;
     border-top   : none;
     border-radius: 0;
+    width        : 100%;
+    margin-left  : 0;
+    margin-right : 0;
 }
 
 .navbar > .container {
